@@ -5,6 +5,7 @@ import gmail from "../../assets/gmail.png";
 import linkedin from "../../assets/linkedin.png";
 import whatsapp from "../../assets/whatsapp.png";
 import telegram from "../../assets/telegram.png";
+import About from '../About/About';
 import "./home.css";
 
 
@@ -16,6 +17,9 @@ const Home = () => {
                     <a ><img src={photo} alt='jpg not found' className='avatar'/></a>
                     <h1><strong>Hola soy Lautaro Mansilla</strong>, y soy Fullstack Web Developer.</h1>
                 </div>
+            </div>
+            <div>
+                <About/>
             </div>
             <footer>
                 <div>
