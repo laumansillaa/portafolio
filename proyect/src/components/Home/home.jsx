@@ -6,6 +6,7 @@ import linkedin from "../../assets/linkedin.png";
 import whatsapp from "../../assets/whatsapp.png";
 import telegram from "../../assets/telegram.png";
 import About from '../About/About';
+import Contact from '../Contact/Contact'
 import "./home.css";
 
 
@@ -15,11 +16,14 @@ const Home = () => {
             <div>
                 <div>
                     <a ><img src={photo} alt='jpg not found' className='avatar'/></a>
-                    <h1><strong>Hola soy Lautaro Mansilla</strong>, y soy Fullstack Web Developer.</h1>
+                    <h1><strong>Lautaro Mansilla</strong> - Fullstack Web Developer</h1>
                 </div>
             </div>
             <div>
                 <About/>
+            </div>
+            <div>
+                <Contact />
             </div>
             <footer>
                 <div>

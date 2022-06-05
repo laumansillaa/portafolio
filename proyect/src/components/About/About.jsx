@@ -11,6 +11,8 @@ import html from '../../assets/stack/html.png'
 import css from '../../assets/stack/css.png'
 import git from '../../assets/stack/git.png'
 import postman from '../../assets/stack/postman.png'
+import sequelize from '../../assets/stack/sequelize.png'
+import mongodb from '../../assets/stack/mongodb.png'
 
 const About = () => {
 
@@ -36,17 +38,17 @@ const About = () => {
                     <img src={node} alt='img node' title='Node.Js' />
                     <img src={express} alt='img express' title='Express' />
                     <img src={postgre} alt='img postgreSQL' title='PostgreSQL' />
+                    <img src={sequelize} alt='sequelize' title='Sequelize'/>
+                    <img src={mongodb} alt='mongoDB' title='MongoDB' />
                     <img src={react} alt='img react' title='React' />
                     <img src={redux} alt='img redux' title='Redux'/>
-                    <img src={ionic} alt='img ionic' title='Redux-Saga'/>
+                    <img src={ionic} alt='img ionic' title='Ionic'/>
                     <img src={html} alt='img html' title='HTML'/>
                     <img src={css} alt='img css' title='CSS'/>
                     <img src={git} alt='img git' title='GIT'/>
                     <img src={postman} alt='img postman' title='Postman'/>
-                    <img src='' alt='sequelize' />
-                    <img src='' alt='mongoDB' />
                 <ul>
-                    <li><a href={CV} class='button'>Descargar CV</a></li>
+                    <li><a href={CV} className='button'>Descargar CV</a></li>
                 </ul>
             </section>
         </div>
