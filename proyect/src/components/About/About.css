@@ -1,0 +1,38 @@
+.buttonDownload {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: 2px solid #787878;
+    border-radius: 12px;
+    padding: 5px;
+    font-size: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+
+}
+
+.containerImg img{
+    justify-items: baseline;
+    /* align-items: baseline; */
+    padding: 2px;
+
+    
+}
+
+.aboutButton{
+    margin-top: 2em;
+}
+
+
+.buttonDownload:hover {
+    background-color: #787878;
+    /* border: 2px solid ; */
+    color: white;
+}
+
+.aboutContainer {
+    border-bottom: solid 2px #efefef;
+    margin: 0 0 4em 0;
+    padding: 0 0 4em 0;
+}

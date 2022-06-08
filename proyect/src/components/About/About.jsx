@@ -13,13 +13,14 @@ import git from '../../assets/stack/git.png'
 import postman from '../../assets/stack/postman.png'
 import sequelize from '../../assets/stack/sequelize.png'
 import mongodb from '../../assets/stack/mongodb.png'
+import "./About.css"
 
 const About = () => {
 
 
     return (
 
-        <div>
+        <div className='aboutContainer'>
             <section>
                 <header>
                     <h2>Bienvenido! Soy Lautaro Mansilla, tengo 25 años y soy FullStack Web Developer.</h2>
@@ -34,6 +35,7 @@ const About = () => {
                 <p>
                     Javascript | Node.js | Express | PostgreSQL | Sequelize | MongoDB | React | Redux | Redux-Saga | Ionic | HTML | CSS | GIT | Postman
                 </p>
+                <div className='containerImg'>
                     <img src={javascript} alt='img javascript' title='Javascript'/>
                     <img src={node} alt='img node' title='Node.Js' />
                     <img src={express} alt='img express' title='Express' />
@@ -47,9 +49,12 @@ const About = () => {
                     <img src={css} alt='img css' title='CSS'/>
                     <img src={git} alt='img git' title='GIT'/>
                     <img src={postman} alt='img postman' title='Postman'/>
-                <ul>
-                    <li><a href={CV} className='button'>Descargar CV</a></li>
-                </ul>
+                </div>
+
+                <div className='aboutButton'>
+                    <a href={CV} target='_blank' className='buttonDownload'> Descargar CV </a>    
+                </div>
+                
             </section>
         </div>
 
