@@ -13,14 +13,22 @@ import "./home.css";
 
 const Home = () => {
     return (
-        <div className='home'>
+        <div className='containerHome'>
             <header id='header'>
                 <div className='inner'>
-                    <a ><img src={photo} alt='jpg not found' className='avatar'/></a>
-                    <h1><strong>Lautaro Mansilla</strong> - Fullstack Web Developer</h1>
+                    <div className='contentHeader'>
+                        <div className='homeImage'>
+                            <a ><img src={photo} alt='jpg not found' className='avatar'/></a>
+                        </div>
+                        <div className='homeInfo'>
+                            <strong className='homeName'>Lautaro Mansilla</strong> 
+                            <h1 className='homeSubtitle'>Fullstack Web Developer.</h1>
+                        
+                        </div>
+                    </div>
                 </div>
             </header>
-            <div>
+            <div classname='homeAbout'>
                 <About/>
             </div>
             

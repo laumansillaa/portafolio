@@ -25,14 +25,14 @@ const About = () => {
                 <header>
                     <h2>Bienvenido! Soy Lautaro Mansilla, tengo 25 años y soy FullStack Web Developer.</h2>
                 </header>
-                <p>Soy un entusiasta, apasionado por el desarrollo de aplicaciones que brinden soluciones practicas. Me considero una persona
-                    responsable, con una gran capacidad de trabajo y una gran capacidad de adaptación a los cambios. Siempre dispuesto a afrontar
-                    nuevos desafios.
-                </p>
+                    <p className='aboutDescription'>Soy un entusiasta, apasionado por el desarrollo de aplicaciones que brinden soluciones practicas. Me considero una persona
+                        responsable, con una gran capacidad de trabajo y una gran capacidad de adaptación a los cambios. Siempre dispuesto a afrontar
+                        nuevos desafios.
+                    </p>
                 <footer>
                     <h3>Stack tecnologico: </h3>
                 </footer>
-                <p>
+                <p className='stackDescription'>
                     Javascript | Node.js | Express | PostgreSQL | Sequelize | MongoDB | React | Redux | Redux-Saga | Ionic | HTML | CSS | GIT | Postman
                 </p>
                 <div className='containerImg'>

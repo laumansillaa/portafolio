@@ -36,3 +36,20 @@
     margin: 0 0 4em 0;
     padding: 0 0 4em 0;
 }
+
+
+/* .descriptionContainer{
+    margin: 0 1em 0 1em;
+
+} */
+
+.aboutDescription {
+    text-align: justify;
+    padding: 0 1em 0 1em;
+}
+
+.stackDescription {
+    text-align: center;
+    padding: 0 1em 0 1em;
+
+}

@@ -4,8 +4,14 @@
 
 .avatar{
 
-    border-radius: 100%;
-    height: 300px;
+    /* border-radius: 100%;
+    height: 300px; */
+    width: 200px;
+    height:300px;
+    border-radius:150px;
+    border-width: 2.5px;
+    border-style: solid;
+    border-color: black;
 }
 
 header p {
@@ -35,13 +41,6 @@ header h6 + p {
 }
 
 
-/* HEADER */
-
-#header {
-
-    background-image: url("../../assets/Header/bg.jpg");
-}
-
 #header > * {
     -moz-flex-shrink: 0;
     -webkit-flex-shrink: 0;
@@ -65,33 +64,77 @@ header h6 + p {
     margin: 0;
 }
 
-/* .iconsFooter {
 
-} */
+.inner {
+    background: linear-gradient(to bottom, #0B1B32, #fafafa)
+    /* , url("../../assets/Header/bg.jpg"); */
+}
 
+.contentHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
 
-/* #footer .copyright {
-    color: rgba(255, 255, 255, 0.4);
-    font-size: 0.8em;
-    list-style: none;
-    margin: 1em 0 0 0;
+.homeSubtitle {
+    /* font-size: 10px; */
+    font-weight: 600;
+    line-height: 1em;
+    margin: 0 0 1em 0;
+    color: black;
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 22ch;
+    /* height: 150px; */
+
+    animation: typing 5s steps(24), blink .9s infinite backwards ;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from { width:0 }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+    
+}
+
+.homeInfo{
+    width: 100%;
+    height: 200px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.homeImage{
+    width: 50%;
+}
+
+.homeName{
+    text-align: left;
+    font-size: 3.5em;
+    height: 50%;
     padding: 0;
-} */
+    color: #016FB9;
+}
 
-    /* #footer .copyright a {
-        border-left: solid 1px rgba(255, 255, 255, 0.25);
-        display: inline-block;
-        line-height: 1em;
-        margin-left: 0.75em;
-        padding-left: 0.75em;
-    } */
 
-        /* #footer .copyright a:first-child {
-            border-left: 0;
-            margin-left: 0;
-            padding-left: 0;
-        } */
+.homeAbout {
+    padding: 5px;
+}
 
-        /* #footer .copyright li a {
-            color: inherit;
-        } */
+.containerHome {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
