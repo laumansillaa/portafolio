@@ -20,7 +20,7 @@ const About = () => {
 
     return (
 
-        <div className='aboutContainer'>
+        <div className='aboutContainer' id='about'>
             <section>
                 <header>
                     <h2>Bienvenido! Soy Lautaro Mansilla, tengo 25 años y soy FullStack Web Developer.</h2>

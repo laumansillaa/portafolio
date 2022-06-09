@@ -8,6 +8,7 @@ import telegram from "../../assets/telegram.png";
 import About from '../About/About';
 import Contact from '../Contact/Contact'
 import Project from '../Project/Project';
+// import Nav from '../Nav/Nav';
 import "./home.css";
 
 
@@ -21,8 +22,12 @@ const Home = () => {
                             <a ><img src={photo} alt='jpg not found' className='avatar'/></a>
                         </div>
                         <div className='homeInfo'>
-                            <strong className='homeName'>Lautaro Mansilla</strong> 
-                            <h1 className='homeSubtitle'>Fullstack Web Developer.</h1>
+                            <div className='titleHome'>
+                                <h1 className='homeName'>Lautaro Mansilla</h1> 
+                            </div>
+                            <div className='subtitleHome'>
+                                <h1 className='homeSubtitle'>Fullstack Web Developer.</h1>
+                            </div>
                         
                         </div>
                     </div>

@@ -14,7 +14,7 @@ const Contact = () => {
 
     return (
         
-        <section>
+        <section id='contact'>
             <h2>Contactame! </h2>
             <p>Si estas buscando un desarrollador web comprometido, dispuesto a nuevos desafios, no dudes en contactarme.</p>
             <div>
