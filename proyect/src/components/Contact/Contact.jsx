@@ -17,6 +17,14 @@ const Contact = () => {
         e.target.reset();
     }
 
+    // const handleClick = () => {
+    //     e.preventDefault();
+    //     const btn = document.querySelector("#btn")
+    //     btnText.innerHTML = 'Gracias!';
+    //     const btnText = document.querySelector("#btnText")
+    //     btn.className.add('active')
+    // }
+
 
     return (
         
@@ -26,7 +34,7 @@ const Contact = () => {
                     <h2 className='contactTitle'>Contactame! </h2>
                 </div>
                 <div className='containDescription'>
-                    <p>Si estas buscando un desarrollador web comprometido, dispuesto a nuevos desafios, no dudes en contactarme.</p>
+                    <p className='contactDescription'>Si estas buscando un desarrollador web comprometido, dispuesto a nuevos desafios, no dudes en contactarme.</p>
                 </div>
                 <div className='containIcon'>
                     <div>
@@ -50,13 +58,15 @@ const Contact = () => {
                 <form ref={form} onSubmit={sendEmail} className='form'>
                     <div className='formInput'>
                         <div className='containName'>
-                            <label>NOMBRE</label>
+                            <label className='name'>NOMBRE</label>
                             <input type='text' name='name' placeholder='Nombre' required className='inputContact' />
                         </div>
                     </div>
                     <div className='formInput'>
-                        <label>EMAIL</label>
-                        <input type='email' name='email' placeholder='Email' required className='inputContact' />
+                        <div className='containEmail'>
+                            <label className='email'>EMAIL</label>
+                            <input type='email' name='email' placeholder='Email' required className='inputContact' />
+                        </div>
                     </div>
                     <div className='messageInput'>
                         <div className='containLabelMessage'>
@@ -67,7 +77,9 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='containSubmit'>
-                        <button type='submit'>Enviar</button>
+                        <button type='submit' className='btn'>
+                            Enviar
+                        </button>
                     </div>
                 </form>
             </div>

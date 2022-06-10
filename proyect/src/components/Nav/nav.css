@@ -9,12 +9,15 @@
 	flex-wrap: nowrap;
 	justify-content: space-between;
     height: 40px;
+    
     /* backdrop-filter: blur(20px); */
 }
 
 .containerItem{
     width: 20%;
     background-color: #0B1B32;
+    opacity: 0.8;
+    
     /* background-color: white; */
     /* margin-right: 2px solid black; */
 }
