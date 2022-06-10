@@ -77,14 +77,74 @@
     height: 10%;
 }
 
+.inputContact {
+    background-color: #9D9D95;
+    color: black;
+}
+
+.inputContact:focus {
+    background-color: white;
+}
+
+
 .textInput{
     height: 95%;
     width: 90%;
     border-radius: 10px;
+    background-color: #9D9D95;
+    color: black;
+    
 }
+
+.textInput:focus{
+    background-color: white;
+}
+
 
 .messageLabel {
     padding-left: 1.5em ;
     height: 20%;
     width: 90%;
+}
+
+.containTitle {
+    height: 25%;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+
+.containDescription {
+    height: 20%;
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+
+
+
+.containIcon {
+    height: 55%;
+    padding: 20px;
+
+}
+
+.icon {
+    margin-left: 10px;
+    padding: 0;
+}
+
+.contactLabel {
+    font-size: 20px;
+    /* font-weight: bold; */
+    margin-left: 10px;
+}
+
+.containName{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
