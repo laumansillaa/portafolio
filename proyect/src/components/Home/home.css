@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 /* .home {
     line-height: 1;
 } */
@@ -64,6 +66,8 @@ header {
 
 .homeSubtitle {
     /* font-size: 10px; */
+    font-family: Bebas Neue, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
     font-weight: 600;
     line-height: 1em;
     margin: 0 0 1em 0;
@@ -71,7 +75,7 @@ header {
     display: block;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 22ch;
+    width: 30ch;
     /* height: 150px; */
 
     animation: typing 5s steps(24), blink .9s infinite backwards ;
@@ -120,7 +124,8 @@ header {
     padding: 0;
     /* color: #016FB9; */
     color: #fafafa;
-    /* font-family: Impact, 'Arial Narrow Bold', sans-serif; */
+    font-family: Bebas Neue, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
 }
 
 
@@ -147,6 +152,80 @@ header {
     }
     .homeName{
         font-size: .8rem;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    #header h1 {
+        line-height: 1em;
+    }
+
+    #header {
+        height: 100%;
+    }
+
+    .homeImage {
+        padding-top: 30px;
+        height: 100%;
+    }
+
+    .homeInfo {
+        height: 100%;
+    }
+
+    /* .subtitleHome {
+        height: 100%;
+    } */
+
+    .contentHeader {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 0;
+        height: 100%;
+
+    }
+
+    header {
+        padding-top: 0;
+    }
+
+    .homeInfo {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 100%;
+    }
+
+    .homeName {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .inner {
+        height: 100%;
+    }
+
+
+    .homeSubtitle {
+        font-size: .9rem;
+        text-align: center;
+        font-weight: 530;
+    }
+
+    .subtitleHome {
+        padding-top: 1em;
+        width: 100%;
+        /* width: 340px; */
+        
     }
 
 }

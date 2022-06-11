@@ -40,3 +40,15 @@
 .navItem:hover{
     color: #016FB9;
 }
+
+@media screen and (max-width: 375px) {
+
+    .containerNav {
+        display: none;
+    }
+
+    .containerNav{
+        float: right;
+    }
+
+}

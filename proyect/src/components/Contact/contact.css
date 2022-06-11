@@ -239,9 +239,9 @@
         justify-content: center;
         align-items: center;
         align-content: stretch;
-        border-width: 2px;
+        /* border-width: 2px;
         border-style: solid;
-        border-color: red;
+        border-color: #fafafa; */
 
     }
 
@@ -256,9 +256,9 @@
         align-content: center;
         margin: 0 0 0 0;
 
-        border-width: 2px;
+        /* border-width: 2px;
         border-style: solid;
-        border-color: #fafafa;
+        border-color: #fafafa; */
     }
 
     .containTitle {
@@ -338,7 +338,7 @@
         margin: 10px 0 0 0;
         border-width: 2px;
         border-style: solid;
-        border-color: yellow;
+        border-color: #fafafa;
     }
 
     .form{
