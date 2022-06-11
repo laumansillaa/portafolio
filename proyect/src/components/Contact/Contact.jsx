@@ -37,16 +37,16 @@ const Contact = () => {
                     <p className='contactDescription'>Si estas buscando un desarrollador web comprometido, dispuesto a nuevos desafios, no dudes en contactarme.</p>
                 </div>
                 <div className='containIcon'>
-                    <div>
-                        <div>
+                    <div className='cont'>
+                        <div className='contLabel'>
                             <label className='contactLabel'>Redes - Email</label>
                         </div>
                         <a href="https://www.github.com/laumansillaa" className='icon'><img src={github} alt='img github' title='Github'/></a>
                         <a href="https://www.linkedin.com/in/lautaro-mansilla" className='icon' ><img src={linkedin} alt='img linkedin' title='Linkedin'/></a>
                         <a href="mailto:mansillaalau@gmail.com" className='icon'><img src={gmail} alt='img gmail' title='Gmail'/></a>
                     </div>
-                    <div>
-                        <div>
+                    <div className='cont'>
+                        <div className='contLabel'>
                             <label className='contactLabel'>Telefono</label>
                         </div>
                         <a href="https://wa.me/542215062415" className='icon' ><img src={whatsapp} alt='img whatsapp' title='WhatsApp'/></a>

@@ -21,6 +21,10 @@
     
 }
 
+.imgAbout {
+    margin-right: 10px;
+}
+
 .aboutButton{
     /* margin-top: 2em; */
     display: flex;

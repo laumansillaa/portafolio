@@ -36,19 +36,19 @@ const About = () => {
                     Javascript | Node.js | Express | PostgreSQL | Sequelize | MongoDB | React | Redux | Redux-Saga | Ionic | HTML | CSS | GIT | Postman
                 </p>
                 <div className='containerImg'>
-                    <img src={javascript} alt='img javascript' title='Javascript'/>
-                    <img src={node} alt='img node' title='Node.Js' />
-                    <img src={express} alt='img express' title='Express' />
-                    <img src={postgre} alt='img postgreSQL' title='PostgreSQL' />
-                    <img src={sequelize} alt='sequelize' title='Sequelize'/>
-                    <img src={mongodb} alt='mongoDB' title='MongoDB' />
-                    <img src={react} alt='img react' title='React' />
-                    <img src={redux} alt='img redux' title='Redux'/>
-                    <img src={ionic} alt='img ionic' title='Ionic'/>
-                    <img src={html} alt='img html' title='HTML'/>
-                    <img src={css} alt='img css' title='CSS'/>
-                    <img src={git} alt='img git' title='GIT'/>
-                    <img src={postman} alt='img postman' title='Postman'/>
+                    <img src={javascript} alt='img javascript' title='Javascript' className='imgAbout' />
+                    <img src={node} alt='img node' title='Node.Js' className='imgAbout'/>
+                    <img src={express} alt='img express' title='Express' className='imgAbout' />
+                    <img src={postgre} alt='img postgreSQL' title='PostgreSQL' className='imgAbout' />
+                    <img src={sequelize} alt='sequelize' title='Sequelize' className='imgAbout'/>
+                    <img src={mongodb} alt='mongoDB' title='MongoDB' className='imgAbout'/>
+                    <img src={react} alt='img react' title='React' className='imgAbout' />
+                    <img src={redux} alt='img redux' title='Redux' className='imgAbout'/>
+                    <img src={ionic} alt='img ionic' title='Ionic' className='imgAbout'/>
+                    <img src={html} alt='img html' title='HTML' className='imgAbout'/>
+                    <img src={css} alt='img css' title='CSS' className='imgAbout'/>
+                    <img src={git} alt='img git' title='GIT' className='imgAbout'/>
+                    <img src={postman} alt='img postman' title='Postman' className='imgAbout'/>
                 </div>
 
                 <div className='aboutButton'>

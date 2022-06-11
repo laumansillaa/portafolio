@@ -12,19 +12,19 @@ const Project = () => {
     return (
         
         <div id='projects' className='projects'>
-            <div className='projectTitle'>
-                <h3>Proyectos</h3>
+            <div className='containProjectTitle'>
+                <h3 className='projectTitle'>Proyectos</h3>
             </div>
             <div className='containerCard'>
                 <div className='card'>
                     <div className='reactplayer'>
-                        <ReactPlayer url='https://vimeo.com/677424926'  />
+                        <ReactPlayer url='https://vimeo.com/677424926' />
                     </div>
                     <div>
                         <div>
                             <h2>Qameleon - Crypto Wallet App</h2>
                             <div className='contentInfo'>
-                                <p>App Mobile - Crypto Wallet conectada a la blockhain de Stellar y Ethereum. Admite la transaccion de activos 
+                                <p className='infoProjects'>App Mobile - Crypto Wallet conectada a la blockhain de Stellar y Ethereum. Admite la transaccion de activos 
                                     entre usuarios (compra, venta, transferencias), como asi tambien el stacking.</p>
                             </div>
                             <div className='projectButtonContainer'>
@@ -42,7 +42,7 @@ const Project = () => {
                         <div>
                             <h2>Gym-App</h2>
                             <div className='contentInfo'>
-                                <p>App Mobile - Aplicacion para gestionar la informacion de los alumnos de un gym. Admite agregar alumnos
+                                <p className='infoProjects'>App Mobile - Aplicacion para gestionar la informacion de los alumnos de un gym. Admite agregar alumnos
                                     y agregarle rutinas a cada uno de ellos.
                                 </p>
                             </div>

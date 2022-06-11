@@ -2,21 +2,23 @@
     width: 100%;
 }
 
+.projectTitle{
+    color: #fafafa;
+    font-size: 1.5em;
+
+}
+
 .containerCard{
     display: flex;
 	flex-direction: column-reverse;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: stretch;
-	align-content: center;
-    /* border-width: 1px;
-    border-style: solid;
-    border-color: red; */
-    
+	align-content: center;    
 }
 
 .card{
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
     border-color: white;
     padding-top: 1.5em;
@@ -72,4 +74,21 @@
     /* border-bottom: solid 2px #efefef; */
     /* margin: 0 0 4em 0; */
     padding: 0 0 4em 0;
+}
+
+.infoProjects {
+    padding: 0 2em 0 2em;
+    color: #fafafa;
+}
+
+@media  screen and (max-width: 750px) {
+    .reactplayer {
+
+        width: 500px;
+        padding-left: 5.5em; 
+    }
+
+    /* .player {
+        width: 500px;
+    } */
 }
