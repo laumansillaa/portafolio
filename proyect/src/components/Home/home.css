@@ -3,11 +3,13 @@
 /* .home {
     line-height: 1;
 } */
+.divtop{
+    width: 100%;
+    height: 70px;
+}
 
 .avatar{
 
-    /* border-radius: 100%;
-    height: 300px; */
     width: 200px;
     height:300px;
     border-radius:150px;
@@ -18,7 +20,7 @@
 
 header {
     margin-top: 0;
-    padding-top: 2.1em;
+    /* padding-top: 2.1em; */
 }
 
 #header > * {
@@ -34,11 +36,10 @@ header {
     -webkit-flex-grow: 1;
     -ms-flex-grow: 1;
     flex-grow: 1;
-    margin: 0 0 2em 0;
+    /* margin: 0 0 2em 0; */
 }
 
 #header h1 {
-    /* color: rgba(255, 255, 255, 0.5); */
     font-size: 1.35em;
     line-height: 1.75em;
     margin: 0;
@@ -46,9 +47,9 @@ header {
 
 
 .inner {
-    /* background: linear-gradient(to bottom, #0B1B32, #fafafa) */
-    background-image: url("../../assets/Header/ab.jpg");
-    /* , url("../../assets/Header/bg.jpg"); */
+    background: #016FB9;
+    border: 2px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .contentHeader{
@@ -59,47 +60,49 @@ header {
     padding: 1em;
 }
 
+.welcomeHome {
+    color: #fafafa;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    font-family: Bebas Neue, 'Arial Narrow Bold', sans-serif;
+}
+
+.titleHome {
+    height: 100px;
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    background: linear-gradient(90deg, rgba(46, 47, 50, 0.8) 50%, rgba(54, 44, 44, 0) 74.71%);
+}
+.homeName{
+    padding: 0;
+    color: #fafafa;
+    font-family: Bebas Neue, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+}
+
 .subtitleHome{
     height: 100px;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
+    margin-top: 5px;
+    padding-left: 10px;
+    background: linear-gradient(90deg, rgba(46, 47, 50, 0.8) 50%, rgba(54, 44, 44, 0) 74.71%);
 }
 
 .homeSubtitle {
-    /* font-size: 10px; */
+
     font-family: Bebas Neue, 'Arial Narrow Bold', sans-serif;
+    padding-top: 5px;
     letter-spacing: 5px;
-    font-weight: 600;
     line-height: 1em;
-    margin: 0 0 1em 0;
     color: #fafafa;
-    display: block;
-    white-space: nowrap;
-    border-right: 4px solid;
-    width: 30ch;
-    /* height: 150px; */
-
-    animation: typing 5s steps(24), blink .9s infinite backwards ;
-    overflow: hidden;
 }
 
-@keyframes typing {
-    from { width:0 }
-}
-
-@keyframes blink {
-    50% { border-color: transparent }
-    
-}
 
 .homeInfo{
     width: 100%;
-    height: 200px;
+    height: 100%;
     text-align: left;
-
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* flex-direction: column; */
     display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -111,21 +114,7 @@ header {
 
 .homeImage{
     width: 50%;
-}
-
-.titleHome {
-    height: 100px;
-    font-size: 2.8rem;
-}
-.homeName{
-    /* font-size: 15rem; */
-    text-align: left;
-    /* height: 50%; */
-    padding: 0;
-    /* color: #016FB9; */
-    color: #fafafa;
-    font-family: Bebas Neue, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 5px;
+    height: 100%;
 }
 
 

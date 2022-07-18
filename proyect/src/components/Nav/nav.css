@@ -1,45 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .nav{
     position: fixed;
     width: 100%;
+    font-family: 'Bebas Neue';
 }   
+
+.primary-menu {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.item-text {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+}
+
+.item-nav {
+    border: 2px solid black;
+}
+
+.cont-items-nav {
+    width: 80%;
     
+}
+.primary-menu {
+    margin: 0;
+    height: 70px;
+    width: 100%;
+}
+
+.primary-menu li {
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+}
+
+.primary-menu a {
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    font-size: 26px;
+    letter-spacing: 2px;
+    /* padding: 12px 10px; */
+    transition: .4s;
+}
+.primary-menu a:hover,
+.primary-menu .active {
+    color:black;
+}
+
+.primary-menu li a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #fafafa;
+    bottom: 7px;
+    left: 0;
+    transition: all .5s;
+}
+
+.primary-menu li a:hover:after {
+    width: 100%;
+}
+
+.primary-menu li .active:after {
+    width: 100%;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
 .containerNav{
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-    height: 40px;
-    
-    /* backdrop-filter: blur(20px); */
+    height: 70px;
+    background: #65A2CB;
+
+
 }
 
 .containerItem{
     width: 20%;
-    background-color: #0B1B32;
-    opacity: 0.8;
-    
-    /* background-color: white; */
-    /* margin-right: 2px solid black; */
+    /* background-color: rgba(1, 111, 185, 0.85); */
+    /* opacity: 0.8; */
+    border: 2px solid black;
+
 }
 
-/* .containerItem:hover{
-    color:white
-} */
 
 .navItem{
-    margin-top: 6px;
     align-items: center;
     display: flex;
     justify-content: center;
-    font-size: 20px;
+    height: 100%;
+    font-size: 26px;
     color: white;
     text-decoration: none;
 
 }
 
-.navItem:hover{
-    color: #016FB9;
-}
+/*  */
 
 @media screen and (max-width: 375px) {
 

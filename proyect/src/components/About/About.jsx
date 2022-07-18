@@ -13,6 +13,7 @@ import git from '../../assets/stack/git.png'
 import postman from '../../assets/stack/postman.png'
 import sequelize from '../../assets/stack/sequelize.png'
 import mongodb from '../../assets/stack/mongodb.png'
+import developer from '../../assets/developer.svg'
 import "./About.css"
 
 const About = () => {
@@ -21,16 +22,20 @@ const About = () => {
     return (
 
         <div className='aboutContainer' id='about'>
-            <section>
-                <header>
-                    <h2>Bienvenido! Soy Lautaro Mansilla, tengo 25 años y soy FullStack Web Developer.</h2>
-                </header>
+            <section className='cont-about'>
+                <div className='img-content'>
+                    <img src={developer} alt='svgnotfound' className='img-svg' />
+                </div>
+                <div>
                     <p className='aboutDescription'>Soy un entusiasta, apasionado por el desarrollo de aplicaciones que brinden soluciones practicas. Me considero una persona
                         responsable, con una gran capacidad de trabajo y una gran capacidad de adaptación a los cambios. Siempre dispuesto a afrontar
                         nuevos desafios.
                     </p>
-                <footer>
-                    <h3>Stack tecnologico: </h3>
+                </div>
+            </section>
+            <div className='cont-stack'>
+                <footer >
+                    <h3 className='stackDescription'>Stack tecnologico: </h3>
                 </footer>
                 <p className='stackDescription'>
                     Javascript | Node.js | Express | PostgreSQL | Sequelize | MongoDB | React | Redux | Redux-Saga | Ionic | HTML | CSS | GIT | Postman
@@ -50,12 +55,10 @@ const About = () => {
                     <img src={git} alt='img git' title='GIT' className='imgAbout'/>
                     <img src={postman} alt='img postman' title='Postman' className='imgAbout'/>
                 </div>
-
                 <div className='aboutButton'>
                     <a href={CV} target='_blank' className='buttonDownload'> Descargar CV </a>    
                 </div>
-                
-            </section>
+            </div>
         </div>
 
     )
