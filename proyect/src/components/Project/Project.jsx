@@ -7,7 +7,6 @@ import "./project.css"
 const Project = () => {
 
 
-    
 
     return (
         
@@ -22,7 +21,7 @@ const Project = () => {
                     </div>
                     <div>
                         <div>
-                            <h2>Qameleon - Crypto Wallet App</h2>
+                            <h2 className='proyect-title'>Qameleon - Crypto Wallet App</h2>
                             <div className='contentInfo'>
                                 <p className='infoProjects'>App Mobile - Crypto Wallet conectada a la blockhain de Stellar y Ethereum. Admite la transaccion de activos 
                                     entre usuarios (compra, venta, transferencias), como asi tambien el stacking.</p>
@@ -33,14 +32,13 @@ const Project = () => {
                         </div>
                     </div>
                 </div>
-
                 <div className='card'>
                     <div className='containImg'>
                         <img src={Allalumns} alt='Gym-App' className='imgNotes'/>
                     </div>
                     <div>
                         <div>
-                            <h2>Gym-App</h2>
+                            <h2 className='proyect-title'>Gym-App</h2>
                             <div className='contentInfo'>
                                 <p className='infoProjects'>App Mobile - Aplicacion para gestionar la informacion de los alumnos de un gym. Admite agregar alumnos
                                     y agregarle rutinas a cada uno de ellos.
@@ -52,9 +50,7 @@ const Project = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
 
     )

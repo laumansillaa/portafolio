@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .containerContact{
     display: flex;
 	flex-direction: reverse;
@@ -5,11 +7,14 @@
 	justify-content: center;
 	align-items: stretch;
 	align-content: center;
-    /* border-width: 1px;
-    border-style: solid;
-    border-color: black; */
+
+    font-family: Bebas Neue, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    color: #000000;
+    background: #016FB9;
+
     margin: 1.5em;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     height: 27em;
 }
 
@@ -22,12 +27,14 @@
     border-width: 2px;
     border-style: solid;
     border-color: #fafafa;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     margin: 0 .5em 0 0;
+
 }
 
 .formContact{
     width: 50%;
+    height: 100%;
     display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -37,7 +44,7 @@
     border-width: 2px;
     border-style: solid;
     border-color: #fafafa;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     margin: 0 0 0 .5em;
     /* box-shadow:  #fafafa; */
 }
@@ -48,16 +55,14 @@
 
 .formInput{
     height: 15%;
-    /* padding: .4em 0 .4em 0; */
+    padding-top: .3rem;
+
 }
 
 .messageInput{
-    height: 60%;
+    height: 55%;
     text-align: start;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* padding: 0 .5em 0 .5em; */
+    padding-top: .3rem;
 }
 
 .containLabelMessage {
@@ -68,32 +73,29 @@
 .containText {
     height: 80%;
     width: 100%;
-    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .containSubmit{
-    height: 10%;
+    height: 10%;    
+    padding-bottom: .8rem ;
 }
 
 .inputContact {
     background-color: #9D9D95;
     color: black;
     width: 85%;
-    border-radius: 10px;
 }
 
 .inputContact:focus {
     background-color: white;
 }
 
-
 .textInput{
-    height: 95%;
+    height: 90%;
     width: 90%;
-    border-radius: 10px;
     background-color: #9D9D95;
     color: black;
     
@@ -103,9 +105,8 @@
     background-color: white;
 }
 
-
 .messageLabel {
-    color: #fafafa;
+    color: #000000;
     padding-left: 1.5em ;
     margin-left: 15px;
     height: 20%;
@@ -119,10 +120,10 @@
 }
 
 .contactTitle {
-    color: #fafafa;
+    color: #000000;
 }
 .contactDescription {
-    color: #fafafa;
+    color: #000000;
 }
 
 .containDescription {
@@ -132,13 +133,9 @@
     padding: 20px;
 }
 
-
-
-
 .containIcon {
     height: 55%;
     padding: 20px;
-
 }
 
 .icon {
@@ -148,9 +145,8 @@
 
 .contactLabel {
     font-size: 20px;
-    /* font-weight: bold; */
     margin-left: 10px;
-    color: #fafafa;
+    color: #000000;
 }
 
 .containName{
@@ -165,9 +161,8 @@
 
 .name{
     font-size: 15px;
-    /* font-weight: bold; */
     margin-left: 10px;
-    color: #fafafa;
+    color: #000000;
 }
 
 .containEmail {
@@ -182,18 +177,17 @@
 
 .email {
     font-size: 15px;
-    /* font-weight: bold; */
     margin-left: 10px;
-    color: #fafafa;
+    color: #000000;
 }
 
 /* -------- BOTON SUBMIT -------- */
 
 .btn {
     background-color: white;
+    font-family: Bebas Neue, 'Arial Narrow Bold', sans-serif;
     color: black;
     width: 5em;
-    border-radius: 10px;
     font-size: 20px;
     padding: 4px;
     margin-top: 0;
@@ -256,9 +250,6 @@
         align-content: center;
         margin: 0 0 0 0;
 
-        /* border-width: 2px;
-        border-style: solid;
-        border-color: #fafafa; */
     }
 
     .containTitle {

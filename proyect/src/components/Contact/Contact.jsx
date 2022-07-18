@@ -17,14 +17,6 @@ const Contact = () => {
         e.target.reset();
     }
 
-    // const handleClick = () => {
-    //     e.preventDefault();
-    //     const btn = document.querySelector("#btn")
-    //     btnText.innerHTML = 'Gracias!';
-    //     const btnText = document.querySelector("#btnText")
-    //     btn.className.add('active')
-    // }
-
 
     return (
         
