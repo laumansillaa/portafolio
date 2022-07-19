@@ -1,6 +1,6 @@
 import React from 'react'
-import './nav.css';
-
+import './styles/nav.css';
+import './styles/nav-screen-412.css'
 // &lt;/Lau&gt
 
 const Nav = () => {

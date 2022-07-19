@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 import Allalumns from "../../assets/Projects/IonicNote/Allalumns.jpg";
-import "./project.css"
-
+import "./styles/project.css";
+import './styles/projects-screen-750.css';
+import './styles/projects-screen-375.css';
+import './styles/projects-screen-390.css';
+import './styles/projects-screen-414.css';
 
 const Project = () => {
 

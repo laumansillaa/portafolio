@@ -14,7 +14,12 @@ import postman from '../../assets/stack/postman.png'
 import sequelize from '../../assets/stack/sequelize.png'
 import mongodb from '../../assets/stack/mongodb.png'
 import developer from '../../assets/developer.svg'
-import "./About.css"
+import "./styles/About.css";
+import './styles/about-screen-412.css'
+
+
+
+
 
 const About = () => {
 
@@ -26,7 +31,7 @@ const About = () => {
                 <div className='img-content'>
                     <img src={developer} alt='svgnotfound' className='img-svg' />
                 </div>
-                <div>
+                <div className='cont-about-description'>
                     <p className='aboutDescription'>Soy un entusiasta, apasionado por el desarrollo de aplicaciones que brinden soluciones practicas. Me considero una persona
                         responsable, con una gran capacidad de trabajo y una gran capacidad de adaptación a los cambios. Siempre dispuesto a afrontar
                         nuevos desafios.

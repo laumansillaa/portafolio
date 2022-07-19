@@ -5,7 +5,12 @@ import gmail from "../../assets/gmail.png";
 import linkedin from "../../assets/linkedin.png";
 import whatsapp from "../../assets/whatsapp.png";
 import telegram from "../../assets/telegram.png";
-import "./contact.css";
+import "./styles/contact.css";
+import './styles/contact-screen-750.css';
+import './styles/contact-screen-690.css';
+
+
+
 
 const Contact = () => {
     
@@ -26,7 +31,8 @@ const Contact = () => {
                     <h2 className='contactTitle'>Contactame! </h2>
                 </div>
                 <div className='containDescription'>
-                    <p className='contactDescription'>Si estas buscando un desarrollador web comprometido, dispuesto a nuevos desafios, no dudes en contactarme.</p>
+                    <p className='contactDescription'>Si estas buscando un desarrollador web comprometido, dispuesto a nuevos desafios, no dudes en contactarme.
+                        Estamos en contacto!</p>
                 </div>
                 <div className='containIcon'>
                     <div className='cont'>

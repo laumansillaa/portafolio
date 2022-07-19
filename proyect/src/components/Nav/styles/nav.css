@@ -128,15 +128,15 @@ ul {
 }
 
 /*  */
-
-@media screen and (max-width: 375px) {
-
-    .containerNav {
-        display: none;
-    }
-
-    .containerNav{
-        float: right;
-    }
-
+.mobile-nav {
+    float: right;
+    margin: 5px;
+    padding: 10px;
+    font-size: 24px;
+    color: #83ffd8;    
+    outline: none;
+    cursor: pointer;
 }
+
+
+

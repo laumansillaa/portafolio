@@ -1,0 +1,23 @@
+@media screen and (max-width: 750px) {
+
+    .contactTitle{
+        font-size: 25px;
+    }
+
+    .contactDescription{
+        font-size: 18px;
+    }
+
+    .containDescription{
+        padding: 15px;
+    }
+
+    .containName {
+        width: auto;
+    }
+
+    .containEmail {
+        width: auto;
+    }
+
+}

@@ -4,7 +4,11 @@ import About from '../About/About';
 import Contact from '../Contact/Contact'
 import Project from '../Project/Project';
 
-import "./home.css";
+import "./styles/home.css";
+import './styles/home-screen-750.css';
+import './styles/home-screen-414.css';
+import './styles/home-screen-820.css';
+import './styles/home-screen-412.css';
 
 
 const Home = () => {

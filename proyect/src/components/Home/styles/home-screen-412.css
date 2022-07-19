@@ -1,0 +1,25 @@
+@media screen and (max-width: 412px) {
+    
+    .welcomeHome {
+        text-align: start;
+    }
+
+    .titleHome {
+        height: 100%;
+    }
+
+    .homeName{
+        font-size: .5rem;
+    }
+
+    .subtitleHome {
+        height: 100%;
+        padding-top: 0;
+    }
+
+    .homeSubtitle {
+        text-align: start;
+    }
+
+
+}
