@@ -1,3 +1,3 @@
 [build]
-publish = "dist"
+publish = "proyect/index.html"
 command = "npm build"
