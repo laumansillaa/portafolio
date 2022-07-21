@@ -1,3 +1,3 @@
-[build]
-publish = "index.html"
+[dist]
+publish = "dist"
 command = "npm run build"
