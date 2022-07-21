@@ -1,3 +1,3 @@
 [proyect]
-publish = "dist"
+publish = "dist/main.js"
 command = "npm run build"
