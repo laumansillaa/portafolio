@@ -1,10 +1,13 @@
 import React from 'react';
-import photo from "../../assets/photo.png";
+import photo from "../../assets/pic.jpg";
 import About from '../About/About';
 import Contact from '../Contact/Contact'
 import Project from '../Project/Project';
-
-import "./styles/home.css";
+import developer from '../../assets/developer.svg'
+import whatsapp from '../../assets/whatsapp.svg'
+import linkedin from '../../assets/linkedin.svg'
+import github from '../../assets/github.svg'
+import style from "./styles/home.module.css";
 import './styles/home-screen-750.css';
 import './styles/home-screen-414.css';
 import './styles/home-screen-820.css';
@@ -13,45 +16,30 @@ import './styles/home-screen-412.css';
 
 const Home = () => {
     return (
-        <div className='containerHome'>
-            <div className='divtop'>
-            </div>
-            <header id='header'>
-                <div className='inner'>
-                    <div className='contentHeader'>
-                        <div className='homeInfo'>
-                            <div>
-                                <h4 className='welcomeHome'>HOLA, BIENVENIDO!</h4>
-                            </div>
-                            <div className='titleHome'>
-                                <h1 className='homeName'>Lautaro Mansilla</h1> 
-                            </div>
-                            <div className='subtitleHome'>
-                                <h1 className='homeSubtitle'>Fullstack Web Developer</h1>
-                            </div>
+        <div className={style.containerHome} id='home'>
+            <div className={style.contText}>
+                    <div className={style.homeInfo}>
+                        <h3 className={style.welcomeHome}>Hola, bienvenido!</h3>
+                        <div className={style.titleHome}>
+                            <h1 className={style.homeName}>Lautaro Mansilla</h1> 
                         </div>
-                        <div className='homeImage'>
-                            <a ><img src={photo} alt='jpg not found' className='avatar'/></a>
+                        <div className={style.subtitleHome}>
+                            <h1 className={style.homeSubtitle}>Fullstack Web Developer</h1>
                         </div>
                     </div>
-                </div>
-            </header>
-            <div classname='homeAbout'>
-                <About/>
+                    {/* <div className='homeImage'>
+                        <a ><img src={photo} alt='jpg not found' className='avatar'/></a>
+                    </div> */}
+                    <div className={style.contSvg}>
+                        <img src={developer} alt='developer.svg' />
+                    </div>
+                
             </div>
-            
-            <div>
-                <Project/>
+            <div className={style.contIcons}>
+                <img src={whatsapp} alt='whatsapp' className={style.icon}/>
+                <img src={linkedin} alt='linkedin' className={style.icon}/>
+                <img src={github} alt='github' className={style.icon}/>
             </div>
-            <div>
-                <Contact />
-            </div>
-            <footer>
-                <div className='copyright'>
-                    <a >&copy; Lautaro Mansilla - FullStack Web Developer </a>
-                    <a >- Hecho con React y CSS -</a>
-                </div>
-            </footer>
         </div>
     )
 }

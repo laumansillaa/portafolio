@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.containerHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 100%;
+    /* background: #95A3B3; */
+    /* background: #A2ABB5; */
+    /* background: #272838; */
+    background: #E1DEE3;
+}
+
+h4, h1{
+    margin: 1rem;
+}
+
+.contText{
+    padding-top: 5rem;
+    width: 80%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contIcons{
+    width: 15%;
+    border-radius: 25%;
+    margin-bottom: 3rem;
+}
+
+.icon{
+    height: 2.5rem;
+    margin-right: 1rem;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+.contText{
+
+}
+
+.welcomeHome {
+    margin: 0;
+    color: black;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: Staatliches;
+}
+
+.titleHome {
+    /* border: 2px solid red; */
+}
+.homeName{
+    font-family: Staatliches;
+    color: #333;
+    font-size: 5.4rem;
+    letter-spacing: 5px;
+}
+
+.subtitleHome{
+    /* border: 1px solid red; */
+}
+
+.homeSubtitle {
+    font-size: 3.4rem;
+    font-family: Staatliches;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    line-height: 1em;
+    color: #333;
+}
+
+
+.homeInfo{
+    /* text-align: start; */
+    width: 70%;
+}
+
+.contSvg{
+    width: 30%;
+}
+
+.homeImage{
+    width: 50%;
+    height: 100%;
+}
+
+
+.homeAbout {
+    padding: 5px;
+}
+
+

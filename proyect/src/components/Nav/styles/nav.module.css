@@ -1,0 +1,152 @@
+.contNav{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    background: #222222;
+    /* opacity: 98%; */
+    padding-bottom: .5rem;
+    z-index: 1;
+  }
+  .navContainer{
+    width: 100%;
+    /* padding: 1rem; */
+  }
+  
+  .contImgNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #fff;
+    padding-left: 1rem;
+    width: 20%;
+  }
+  
+  .contLampara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+  }
+  
+  .logo{
+    /* height: 2.4rem; */
+    color: #fff;
+    font-family: Staatliches;
+    font-size: 2.4rem;
+  }
+
+  .icon{
+    height: 2rem;
+  }
+  
+  .navLabel, .navInput{
+    display: none;
+  }
+  
+  .navContainer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .contItemsNav{
+    margin-left: 4rem;
+    width: 60%;
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    gap: 3em;
+  }
+  
+  .navItem{
+    z-index: 1;
+    width: 80%;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 1.0rem;
+    color: #fff;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  
+  /* No esta haciendo nada? */
+  .navItem::after{
+    content: "";
+    display: block;
+    background: #fff;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .5s;
+  }
+  
+  .navItem:hover{
+    color: #fff;
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    cursor: pointer;
+  }
+  
+  @media (max-width: 730px){
+  
+    .navContainer{
+        padding-right: 1rem;
+        width: 100%;
+    }
+  
+    .navLabel{
+        display: block;
+        cursor: pointer;
+    }
+  
+    .navItem{
+      color: #fff;
+      font-size: 1.3rem;
+    }
+  
+    .contItemsNav{
+        position: absolute;
+        z-index: 1;
+        top: 71px;
+        bottom: 0;
+        background: black;
+        width: 100%;
+        height: 60%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out
+    }
+  
+    .navInput:checked + .contItemsNav{
+        clip-path: circle(100% at center)
+    }
+  }
+  
+  @media (max-width: 900px){
+    .contNav{
+      opacity: 100%;
+      position: static;
+    }
+  
+    .logo{
+        height: 2.4rem;
+    }
+  
+    .contLampara{
+        width: 10%;
+        justify-content: end;
+        padding-right: 1rem;
+    }
+  }
+  
+  @media (max-width: 790px){
+    .contImgNav{
+        padding: 0;
+    }
+  }

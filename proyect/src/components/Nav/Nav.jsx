@@ -1,29 +1,37 @@
 import React from 'react'
-import './styles/nav.css';
-import './styles/nav-screen-412.css'
+import { Link, animateScroll as scroll } from "react-scroll";
+import style from './styles/nav.module.css';
+// import style './styles/nav-screen-412.css'
+import menu from '../../assets/menu.svg'
+import iconNav from '../../assets/iconNav.png'
+
 // &lt;/Lau&gt
 
 const Nav = () => {
 
+    const clickChecked = () => {
+        const gsm = document.getElementById('menu').click()
+    }
 
     return (
-        <div className='containerNav'>
-            <div className='containerItem'>
-                <a className='navItem'>{"<LM/>"}</a>
-            </div>
-            <div className='mobile-nav'>
-                <i class='fa fa-bars'></i>
-            </div>
-            <div className='cont-items-nav'>
-                <ul className='primary-menu' style={{listStyleType: 'none'}}>
-                    <li className='item-nav'><a href='#header' className='item-text' >Inicio</a></li>
-                    <li className='item-nav'><a href='#about' className='item-text'>Sobre mi</a></li>
-                    <li className='item-nav'><a href='#projects' className='item-text'>Proyectos</a></li>
-                    <li className='item-nav'><a href='#contact' className='item-text'>Contacto</a></li>
-                </ul>
+        <div className={style.contNav} >
+            <div className={style.navContainer}>
+                <div className={style.contImgNav}>
+                    {/* <Link to="home" spy={true} smooth={true} offset={-100} duration={200} className={style.logo}><img src={iconNav} alt='icon' className={style.icon} /></Link> */}
+                    <Link to="home" spy={true} smooth={true} offset={-100} duration={200} className={style.logo}>Mansilla</Link>
+                </div>
+                <label for= 'menu' className={style.navLabel}>
+                    <img src={menu} alt='menu-svg' className={style.navSvg} />
+                </label>
+                <input type='checkbox' id='menu' className={style.navInput}></input>
+                <div className={style.contItemsNav}>
+                    <Link to='home' spy={true} smooth={true} offset={-100} duration={300} className={style.navItem} onClick={clickChecked }>Inicio</Link>
+                    <Link to="about" spy={true} smooth={true} offset={-100} duration={300} className={style.navItem} onClick={clickChecked }>Sobre Mi</Link>
+                    <Link to="servicio" spy={true} smooth={true} offset={-100} duration={200} className={style.navItem} onClick={clickChecked}>Proyectos</Link>
+                    <Link to="contact" spy={true} smooth={true} offset={-100} duration={200} className={style.navItem} onClick={clickChecked}>Contacto</Link>
+                </div>
             </div>
         </div>
-
     )
 }
 
