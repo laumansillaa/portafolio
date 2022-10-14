@@ -1,8 +1,4 @@
 import React from 'react';
-import photo from "../../assets/pic.jpg";
-import About from '../About/About';
-import Contact from '../Contact/Contact'
-import Project from '../Project/Project';
 import developer from '../../assets/developer.svg'
 import whatsapp from '../../assets/whatsapp.svg'
 import linkedin from '../../assets/linkedin.svg'
@@ -27,9 +23,6 @@ const Home = () => {
                             <h1 className={style.homeSubtitle}>Fullstack Web Developer</h1>
                         </div>
                     </div>
-                    {/* <div className='homeImage'>
-                        <a ><img src={photo} alt='jpg not found' className='avatar'/></a>
-                    </div> */}
                     <div className={style.contSvg}>
                         <img src={developer} alt='developer.svg' />
                     </div>

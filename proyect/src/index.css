@@ -4,6 +4,7 @@ html body {
   padding: 0;
   border: 0;
   font-size: 100%;
+
 }
 
 h4{
@@ -11,7 +12,8 @@ h4{
 }
 
 html {
-  box-sizing: border-box;
+  height: 100%;
+  /* width: 100% */
 }
 
 body {

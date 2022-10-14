@@ -34,9 +34,9 @@ const About = () => {
                     <p className={style.aboutDescription}>Soy un entusiasta, apasionado por el desarrollo de aplicaciones que brinden soluciones practicas. Me considero una persona
                         responsable, con una gran capacidad de trabajo y una gran capacidad de adaptación a los cambios. Entre mis intereses se encuentra el mundo web3, donde espero pronto poder estar colaborando.
                     </p>
-                    <img src={ethereum} alt='eth-svg' />
+                    <img src={ethereum} alt='eth-svg' className={style.ethSvg} />
                     <div className='aboutButton'>
-                        <a href={CV} target='_blank' className='buttonDownload'> Descargar CV </a>    
+                        <a href={CV} target='_blank' className={style.buttonDownload}> Descargar CV </a>    
                     </div>
                 </div>
             </div>

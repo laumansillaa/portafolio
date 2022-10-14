@@ -94,11 +94,29 @@
     .navContainer{
         padding-right: 1rem;
         width: 100%;
+        align-items: center;
+        padding: 0;
+    }
+
+    .contImgNav{
+      width: 90%;
+      justify-content: flex-start;
+      align-items: flex-start;
+      border-right: 0;
+    }
+
+    .logo{
+      padding-left: 2rem;
     }
   
     .navLabel{
         display: block;
         cursor: pointer;
+        /* padding-right: .5rem; */
+    }
+
+    .navSvg{
+      padding-right: .5rem;
     }
   
     .navItem{
@@ -109,9 +127,11 @@
     .contItemsNav{
         position: absolute;
         z-index: 1;
-        top: 71px;
+        top: 85px;
         bottom: 0;
-        background: black;
+        background: #222222;
+        /* background-color: red; */
+        margin: 0;
         width: 100%;
         height: 60%;
         left: 0;
@@ -123,9 +143,9 @@
         transition: clip-path 1s ease-in-out
     }
   
-    .navInput:checked + .contItemsNav{
+    /* .navInput:checked + .contItemsNav{
         clip-path: circle(100% at center)
-    }
+    } */
   }
   
   @media (max-width: 900px){
