@@ -27,7 +27,7 @@ const Nav = () => {
                 <div className={style.contItemsNav}>
                     <Link to='home' spy={true} smooth={true} offset={-100} duration={300} className={style.navItem} onClick={clickChecked }>Inicio</Link>
                     <Link to="about" spy={true} smooth={true} offset={-100} duration={300} className={style.navItem} onClick={clickChecked }>Sobre Mi</Link>
-                    <Link to="servicio" spy={true} smooth={true} offset={-100} duration={200} className={style.navItem} onClick={clickChecked}>Proyectos</Link>
+                    <Link to="projects" spy={true} smooth={true} offset={-100} duration={200} className={style.navItem} onClick={clickChecked}>Proyectos</Link>
                     <Link to="contact" spy={true} smooth={true} offset={-100} duration={200} className={style.navItem} onClick={clickChecked}>Contacto</Link>
                 </div>
             </div>

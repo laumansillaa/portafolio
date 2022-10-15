@@ -137,6 +137,10 @@
         height: 18rem;
     }
 
+    .aboutBtn{
+        margin-top: 1.5rem;
+    }
+
     h3{
         margin: 0;
     }

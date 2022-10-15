@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 import Allalumns from "../../assets/Projects/IonicNote/Allalumns.jpg";
-import "./styles/project.css";
+import style from "./styles/project.module.css";
+import githubB from '../../assets/githubB.svg'
+import cryptowallet from '../../assets/cryptowallet.mp4'
 import './styles/projects-screen-750.css';
 import './styles/projects-screen-375.css';
 import './styles/projects-screen-390.css';
@@ -13,45 +15,61 @@ const Project = () => {
 
     return (
         
-        <div id='projects' className='projects'>
+        <div id='projects' className={style.projects}>
             <div className='containProjectTitle'>
-                <h3 className='projectTitle'>Proyectos</h3>
+                <h3 className={style.projectTitle}>Proyectos</h3>
             </div>
-            <div className='containerCard'>
-                <div className='card'>
-                    <div className='reactplayer'>
-                        <ReactPlayer url='https://vimeo.com/677424926' />
+            <div className={style.contWallet}>
+                <div className={style.cardWallet}>                
+                    <div className={style.contInfoWallet}>
+                        <div className='contentInfo'>
+                            <h2 className={style.titleWallet}>Qameleon - Crypto Wallet App</h2>
+                            <p className={style.textInfoWallet}>App Mobile - Crypto Wallet conectada a la blockhain de Stellar y Ethereum. Admite la transaccion de activos 
+                                entre usuarios (compra, venta, transferencias), como asi tambien el stacking.</p>
+                        </div>
+                        <div className={style.contBtnCard}>
+                            <a href='https://github.com/laumansillaa/CryptoWalletApp' className={style.textBtn}><img src={githubB} alt='github' className={style.githubWallet}/> GitHub</a>
+                        </div>
                     </div>
-                    <div>
-                        <div>
+                    <div className={style.reactPlayer}>
+                        <ReactPlayer url='https://vimeo.com/677424926' className={style.player}/>
+                    </div>
+                </div>  
+            </div>
+            <div className={style.containerCard}>
+                {/* <div className={style.card}>
+                    <div className={style.reactPlayer}>
+                        <ReactPlayer url='https://vimeo.com/677424926' className={style.player}/>
+                    </div>
+                
+                    <div className={style.contInfo}>
+                        <div className='contentInfo'>
                             <h2 className='proyect-title'>Qameleon - Crypto Wallet App</h2>
-                            <div className='contentInfo'>
-                                <p className='infoProjects'>App Mobile - Crypto Wallet conectada a la blockhain de Stellar y Ethereum. Admite la transaccion de activos 
-                                    entre usuarios (compra, venta, transferencias), como asi tambien el stacking.</p>
-                            </div>
-                            <div className='projectButtonContainer'>
-                                <a href='https://github.com/laumansillaa/CryptoWalletApp' className='projectButton'>GitHub</a>
-                            </div>
+                            <p className={style.textInfo}>App Mobile - Crypto Wallet conectada a la blockhain de Stellar y Ethereum. Admite la transaccion de activos 
+                                entre usuarios (compra, venta, transferencias), como asi tambien el stacking.</p>
+                        </div>
+                        <div className={style.contBtnCard}>
+                            <a href='https://github.com/laumansillaa/CryptoWalletApp' className={style.textBtn}><img src={githubB} alt='github' className={style.github}/> GitHub</a>
                         </div>
                     </div>
-                </div>
-                <div className='card'>
-                    <div className='containImg'>
-                        <img src={Allalumns} alt='Gym-App' className='imgNotes'/>
+                </div> */}
+                <div className={style.cardTwo}>
+                    <div className={style.contImg}>
+                        <img src={Allalumns} alt='Gym-App' className={style.imgNotes}/>
                     </div>
-                    <div>
-                        <div>
+                    
+                    <div className={style.contInfo}>
+                        <div className='contentInfo'>
                             <h2 className='proyect-title'>Gym-App</h2>
-                            <div className='contentInfo'>
-                                <p className='infoProjects'>App Mobile - Aplicacion para gestionar la informacion de los alumnos de un gym. Admite agregar alumnos
-                                    y agregarle rutinas a cada uno de ellos.
-                                </p>
-                            </div>
-                            <div className='projectButtonContainer'>
-                                <a href='https://github.com/laumansillaa/notes-ionic' className='projectButton'>GitHub</a>
-                            </div>
+                            <p className={style.textInfo}>App Mobile - Aplicacion para gestionar la informacion de los alumnos de un gym. Admite agregar alumnos
+                                y agregarle rutinas a cada uno de ellos.
+                            </p>
+                        </div>
+                        <div className={style.contBtnCard}>
+                            <a href='https://github.com/laumansillaa/notes-ionic' className={style.textBtn}><img  src={githubB} alt='github' className={style.github}/>GitHub</a>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
