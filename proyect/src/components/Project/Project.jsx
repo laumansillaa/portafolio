@@ -3,7 +3,6 @@ import ReactPlayer from 'react-player';
 import Allalumns from "../../assets/Projects/IonicNote/Allalumns.jpg";
 import style from "./styles/project.module.css";
 import githubB from '../../assets/githubB.svg'
-import cryptowallet from '../../assets/cryptowallet.mp4'
 import './styles/projects-screen-750.css';
 import './styles/projects-screen-375.css';
 import './styles/projects-screen-390.css';
