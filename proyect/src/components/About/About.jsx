@@ -14,7 +14,7 @@ import postman from '../../assets/stack/postman.png'
 import sequelize from '../../assets/stack/sequelize.png'
 import mongodb from '../../assets/stack/mongodb.png'
 import figma from '../../assets/stack/figma.png'
-import ethereum from '../../assets/ethereum.svg'
+import ethereum from '../../assets/svg/ethereum.svg'
 import style from "./styles/About.module.css";
 import './styles/about-screen-412.css'
 

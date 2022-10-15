@@ -1,8 +1,8 @@
 import React from 'react';
-import developer from '../../assets/developer.svg'
-import whatsapp from '../../assets/whatsapp.svg'
-import linkedin from '../../assets/linkedin.svg'
-import github from '../../assets/github.svg'
+import developer from '../../assets/svg/developer.svg'
+import whatsapp from '../../assets/svg/whatsapp.svg'
+import linkedin from '../../assets/svg/linkedin.svg'
+import github from '../../assets/svg/github.svg'
 import style from "./styles/home.module.css";
 import './styles/home-screen-750.css';
 import './styles/home-screen-414.css';

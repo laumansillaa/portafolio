@@ -2,7 +2,7 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import Allalumns from "../../assets/Projects/IonicNote/Allalumns.jpg";
 import style from "./styles/project.module.css";
-import githubB from '../../assets/githubB.svg'
+import githubB from '../../assets/svg/githubB.svg'
 import './styles/projects-screen-750.css';
 import './styles/projects-screen-375.css';
 import './styles/projects-screen-390.css';
@@ -15,7 +15,7 @@ const Project = () => {
     return (
         
         <div id='projects' className={style.projects}>
-            <div className='containProjectTitle'>
+            <div className={style.contTitleProject}>
                 <h3 className={style.projectTitle}>Proyectos</h3>
             </div>
             <div className={style.contWallet}>
