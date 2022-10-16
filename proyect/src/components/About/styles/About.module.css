@@ -124,6 +124,10 @@
         padding: 2rem 0 3rem 0;
     }
 
+    .boxStack{
+        width: 29%;
+    }
+
     .contStack{
         width: 100%;
         padding: 0;
