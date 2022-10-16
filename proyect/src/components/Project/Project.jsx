@@ -1,6 +1,12 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
+import CarouselImg from './carousel';
 import Allalumns from "../../assets/Projects/IonicNote/Allalumns.jpg";
+import home from '../../assets/Projects/adm/home.jpg'
+import home1 from '../../assets/Projects/adm/home1.jpg'
+import about from '../../assets/Projects/adm/about.jpg'
+import about1 from '../../assets/Projects/adm/about1.jpg'
+import footer from '../../assets/Projects/adm/footer.jpg'
 import style from "./styles/project.module.css";
 import githubB from '../../assets/svg/githubB.svg'
 import './styles/projects-screen-750.css';
@@ -10,6 +16,7 @@ import './styles/projects-screen-414.css';
 
 const Project = () => {
 
+    const admAssets = [home, home1, about, about1]
 
 
     return (
@@ -62,6 +69,24 @@ const Project = () => {
                             <h2 className='proyect-title'>Gym-App</h2>
                             <p className={style.textInfo}>App Mobile - Aplicacion para gestionar la informacion de los alumnos de un gym. Admite agregar alumnos
                                 y agregarle rutinas a cada uno de ellos.
+                            </p>
+                        </div>
+                        <div className={style.contBtnCard}>
+                            <a href='https://github.com/laumansillaa/notes-ionic' className={style.textBtn}><img  src={githubB} alt='github' className={style.github}/>GitHub</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div className={style.card}>
+                    <div className={style.contImg}>
+                        {/* <img src={home} alt='Financiera-ADM' className={style.imgAdm}/> */}
+                        <CarouselImg projectImg={admAssets} />
+                    </div>
+                    
+                    <div className={style.contInfoAdm}>
+                        <div className='contentInfo'>
+                            <h2 className='proyect-title'>Financiera ADM</h2>
+                            <p className={style.textInfo}>Freelance - Website para 'ADM Servicios Financieros'. El proyecto constaba en rehacer en su totalidad el sitio, aplicar nuevos estilos einformar sobre los servicios ofrecidos. Diseño responsive.
                             </p>
                         </div>
                         <div className={style.contBtnCard}>

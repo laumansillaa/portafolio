@@ -26,6 +26,8 @@ h3{
     margin-top: 2rem;
 }
 
+/* PROYECTO WALLET */
+
 .contWallet{
     background-image: url('../../../assets/png/particles.png');
     background-size:cover;
@@ -72,6 +74,8 @@ h3{
     margin-right: .5rem;
 }
 
+/* **************** */
+
 .card{
     width: 90%;
     height: 70%;
@@ -80,6 +84,8 @@ h3{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
+    margin-top: 2rem;
+
 }
 
 .cardTwo{
@@ -92,6 +98,7 @@ h3{
     justify-content: space-between;
     align-items: center;
     padding-left: 2rem;
+    margin-bottom: 2rem;
 }
 
 .contInfo{
@@ -99,6 +106,15 @@ h3{
     display: flex;
     flex-direction: column;
     text-align: start;
+}
+
+.contInfoAdm{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    text-align: end;
 }
 
 .reactPlayer {
@@ -115,6 +131,11 @@ h3{
 
 .imgNotes{
     height: 300px;
+    border-radius: 10px;
+}
+
+.imgAdm{
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -170,6 +191,10 @@ h3{
         width: 95%;
     }
 
+    .card{
+        flex-direction: column;
+        width: 90%;
+    }
 
     .containerCard{
         display: flex;
@@ -188,6 +213,19 @@ h3{
         width: 90%;
         justify-content: center;
         align-items: center;
+        margin-top: 1.5rem;
+    }
+
+    .contInfoAdm{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        margin-top: 1.5rem;
+    }
+
+    .contImg{
+        width: 90%;
     }
 
 }
