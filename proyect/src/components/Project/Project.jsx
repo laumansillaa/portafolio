@@ -77,7 +77,7 @@ const Project = () => {
                             </p>
                         </div>
                         <div className={style.contBtnCard}>
-                            <a href='https://github.com/laumansillaa/notes-ionic' className={style.textBtn}><img  src={githubB} alt='github' className={style.github}/>GitHub</a>
+                            <a href='https://github.com/laumansillaa/notes-ionic' className={style.textBtn} target="_blank"><img  src={githubB} alt='github' className={style.github}/>GitHub</a>
                         </div>
                     </div>
                     
@@ -95,7 +95,7 @@ const Project = () => {
                             </p>
                         </div>
                         <div className={style.contBtnCard}>
-                            <a href='https://github.com/laumansillaa/notes-ionic' className={style.textBtn}><img  src={githubB} alt='github' className={style.github}/>GitHub</a>
+                            <a href='https://github.com/laumansillaa/adm-page' className={style.textBtn} target="_blank"><img  src={githubB} alt='github' className={style.github}/>GitHub</a>
                         </div>
                     </div>
                     

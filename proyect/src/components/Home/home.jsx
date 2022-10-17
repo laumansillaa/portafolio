@@ -30,8 +30,12 @@ const Home = () => {
             </div>
             <div className={style.contIcons}>
                 <img src={whatsapp} alt='whatsapp' className={style.icon}/>
-                <img src={linkedin} alt='linkedin' className={style.icon}/>
-                <img src={github} alt='github' className={style.icon}/>
+                <a href="https://www.linkedin.com/in/lautaro-mansilla" target="_blank">
+                    <img src={linkedin} alt='linkedin' className={style.icon}/>
+                </a>
+                <a href="https://www.github.com/laumansillaa" target="_blank">
+                    <img src={github} alt='github' className={style.icon}/>
+                </a>
             </div>
         </div>
     )
