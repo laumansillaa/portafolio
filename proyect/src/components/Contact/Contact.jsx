@@ -1,15 +1,12 @@
 import React, {useRef} from 'react';
 import emailjs from 'emailjs-com';
-import github from "../../assets/github.png";
-import gmail from "../../assets/gmail.png";
-import linkedin from "../../assets/linkedin.png";
-import whatsapp from "../../assets/whatsapp.png";
-import telegram from "../../assets/telegram.png";
-import "./styles/contact.css";
+import send from '../../assets/svg/send.svg'
+import gmailB from '../../assets/svg/gmailB.svg'
+import linkedinB from '../../assets/svg/linkedinB.svg'
+import githubB from '../../assets/svg/githubB.svg'
+import style from "./styles/contact.module.css";
 import './styles/contact-screen-750.css';
 import './styles/contact-screen-690.css';
-
-
 
 
 const Contact = () => {
@@ -25,58 +22,38 @@ const Contact = () => {
 
     return (
         
-        <section id='contact' className='containerContact'>
-            <div className='infoContact'>
-                <div className='containTitle'>
-                    <h2 className='contactTitle'>Contactame! </h2>
+        <section id='contact' className={style.containerContact}>
+            <div className={style.infoContact}>
+                <div className={style.contTitleForm}>
+                    <h2 className={style.contactTitle}>Contactame</h2>
                 </div>
-                <div className='containDescription'>
-                    <p className='contactDescription'>Si estas buscando un desarrollador web comprometido, dispuesto a nuevos desafios, no dudes en contactarme.
-                        Estamos en contacto!</p>
+                <div className={style.contDescription}>
+                    <p className={style.contactDescription}>Si estas buscando un desarrollador web comprometido, dispuesto a nuevos desafios, no dudes en contactarme.
+                        </p>
                 </div>
-                <div className='containIcon'>
-                    <div className='cont'>
-                        <div className='contLabel'>
-                            <label className='contactLabel'>Redes - Email</label>
-                        </div>
-                        <a href="https://www.github.com/laumansillaa" className='icon'><img src={github} alt='img github' title='Github'/></a>
-                        <a href="https://www.linkedin.com/in/lautaro-mansilla" className='icon' ><img src={linkedin} alt='img linkedin' title='Linkedin'/></a>
-                        <a href="mailto:mansillaalau@gmail.com" className='icon'><img src={gmail} alt='img gmail' title='Gmail'/></a>
-                    </div>
-                    <div className='cont'>
-                        <div className='contLabel'>
-                            <label className='contactLabel'>Telefono</label>
-                        </div>
-                        <a href="https://wa.me/542215062415" className='icon' ><img src={whatsapp} alt='img whatsapp' title='WhatsApp'/></a>
-                        <a href="https://t.me/Laumansillaa" className='icon'><img src={telegram} alt='img telegram' title='Telegram'/></a>
+                <div className={style.containIcon}>
+                    <div className={style.cont}>
+                        <a href="https://www.linkedin.com/in/lautaro-mansilla" className={style.icon} ><img src={linkedinB} alt='img linkedin' title='Linkedin' className={style.iconSvg}/></a>
+                        <a href="mailto:mansillaalau@gmail.com" className={style.icon}><img src={gmailB} alt='img gmail' title='Gmail' className={style.iconSvg}/></a>
+                        <a href="https://www.github.com/laumansillaa" className={style.icon}><img src={githubB} alt='img github' title='Github' className={style.iconSvg}/></a>
                     </div>
                 </div>
             </div>
-            <div className='formContact'>
-                <form ref={form} onSubmit={sendEmail} className='form'>
-                    <div className='formInput'>
-                        <div className='containName'>
-                            <label className='name'>NOMBRE</label>
-                            <input type='text' name='name' placeholder='Nombre' required className='inputContact' />
-                        </div>
+            <div className={style.formContact}>
+                <form ref={form} onSubmit={sendEmail} className={style.form}>
+                    <div className={style.contInput}>
+                        <input type='text' name='name' placeholder='Nombre' required className={style.inputContact} />
                     </div>
-                    <div className='formInput'>
-                        <div className='containEmail'>
-                            <label className='email'>EMAIL</label>
-                            <input type='email' name='email' placeholder='Email' required className='inputContact' />
-                        </div>
+                    <div className={style.contInput}>
+                        <input type='email' name='email' placeholder='Email' required className={style.inputContact} />
                     </div>
-                    <div className='messageInput'>
-                        <div className='containLabelMessage'>
-                            <label className='messageLabel'>MENSAJE</label>
-                        </div>
-                        <div className='containText'>
-                            <textarea name='message' placeholder='Escribe tu mensaje...' className='textInput' required ></textarea>
-                        </div>
+                    <div className={style.contTextarea}>
+                        <textarea name='message' placeholder='Escribe tu mensaje...' className={style.textArea} required ></textarea>
                     </div>
-                    <div className='containSubmit'>
-                        <button type='submit' className='btn'>
+                    <div className={style.contBtnSubmit}>
+                        <button type='submit' className={style.btn}>
                             Enviar
+                            <img src={send} alt='send' className={style.sendBtn} />
                         </button>
                     </div>
                 </form>

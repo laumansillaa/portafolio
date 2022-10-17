@@ -24,6 +24,7 @@ h3{
     justify-content: center; 
     align-items: center;
     margin-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 /* PROYECTO WALLET */
@@ -54,6 +55,10 @@ h3{
     align-items: center;
     text-align: center;
     margin-bottom: 1rem;
+}
+
+.contTitleWallet{
+    margin-top: 1.5rem;
 }
 
 .titleWallet{
@@ -183,6 +188,10 @@ h3{
 
 
 @media (max-width: 480px){
+    .contTitleProject{
+        padding-top: 2.8rem;
+    }
+
     .contInfoWallet{
         width: 90%;
     }

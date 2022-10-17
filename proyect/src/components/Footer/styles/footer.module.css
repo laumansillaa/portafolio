@@ -1,0 +1,40 @@
+.footer{
+    background: #000;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mansilla{
+    height: 2rem;
+}
+
+.textFooter{
+    font-family: Poppins;
+    font-size: 1rem;
+    color: #fff;
+
+}
+
+.contLogo{
+    width: 20%;
+}
+
+.contText{
+    margin-top: 1rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media (max-width: 480px){
+    .footer{
+        height: 100%;
+    }
+
+    .contText{
+        width: 100%;
+    }
+}

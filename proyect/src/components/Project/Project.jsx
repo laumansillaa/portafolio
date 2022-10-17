@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 import CarouselImg from './carousel';
-import Allalumns from "../../assets/Projects/IonicNote/Allalumns.jpg";
+// import Allalumns from "../../assets/Projects/IonicNote/Allalumns.jpg";
 import home from '../../assets/Projects/adm/home.jpg'
 import home1 from '../../assets/Projects/adm/home1.jpg'
 import about from '../../assets/Projects/adm/about.jpg'
 import about1 from '../../assets/Projects/adm/about1.jpg'
-import footer from '../../assets/Projects/adm/footer.jpg'
+import allAlumns from '../../assets/Projects/IonicNote/Allalumns.jpg'
+import addNote from '../../assets/Projects/IonicNote/addNote.jpg'
+import detailPerfil from '../../assets/Projects/IonicNote/detailPerfil.jpg'
+import editNota from '../../assets/Projects/IonicNote/editNota.jpg'
 import style from "./styles/project.module.css";
 import githubB from '../../assets/svg/githubB.svg'
 import './styles/projects-screen-750.css';
@@ -17,7 +20,8 @@ import './styles/projects-screen-414.css';
 const Project = () => {
 
     const admAssets = [home, home1, about, about1]
-
+    const gymAssets = [allAlumns, addNote, detailPerfil, editNota]
+    const gym = true
 
     return (
         
@@ -28,7 +32,7 @@ const Project = () => {
             <div className={style.contWallet}>
                 <div className={style.cardWallet}>                
                     <div className={style.contInfoWallet}>
-                        <div className='contentInfo'>
+                        <div className={style.contTitleWallet}>
                             <h2 className={style.titleWallet}>Qameleon - Crypto Wallet App</h2>
                             <p className={style.textInfoWallet}>App Mobile - Crypto Wallet conectada a la blockhain de Stellar y Ethereum. Admite la transaccion de activos 
                                 entre usuarios (compra, venta, transferencias), como asi tambien el stacking.</p>
@@ -60,9 +64,10 @@ const Project = () => {
                     </div>
                 </div> */}
                 <div className={style.cardTwo}>
-                    <div className={style.contImg}>
+                    {/* <div className={style.contImg}>
                         <img src={Allalumns} alt='Gym-App' className={style.imgNotes}/>
-                    </div>
+                    </div> */}
+                    <CarouselImg projectImg={gymAssets} gym={gym}/>
                     
                     <div className={style.contInfo}>
                         <div className='contentInfo'>

@@ -3,6 +3,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import style from './styles/nav.module.css';
 // import style './styles/nav-screen-412.css'
 import menu from '../../assets/svg/menu.svg'
+import mansilla from '../../assets/svg/mansilla.svg'
 // import iconNav from '../../assets/iconNav.png'
 
 // &lt;/Lau&gt
@@ -18,7 +19,7 @@ const Nav = () => {
             <div className={style.navContainer}>
                 <div className={style.contImgNav}>
                     {/* <Link to="home" spy={true} smooth={true} offset={-100} duration={200} className={style.logo}><img src={iconNav} alt='icon' className={style.icon} /></Link> */}
-                    <Link to="home" spy={true} smooth={true} offset={-100} duration={200} className={style.logo}>Mansilla</Link>
+                    <Link to="home" spy={true} smooth={true} offset={-100} duration={200} className={style.logo}><img src={mansilla} alt='mansilla' className={style.mansilla} /></Link>
                 </div>
                 <label for= 'menu' className={style.navLabel}>
                     <img src={menu} alt='menu-svg' className={style.navSvg} />
