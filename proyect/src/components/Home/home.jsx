@@ -24,7 +24,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className={style.contSvg}>
-                        <img src={developer} alt='developer.svg' />
+                        <img src={developer} alt='developer.svg' className={style.svgHome}/>
                     </div>
                 
             </div>

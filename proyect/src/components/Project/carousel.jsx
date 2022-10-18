@@ -5,11 +5,10 @@ import style from './styles/carousel.module.css'
 
 const CarouselImg = ({projectImg, gym}) => {
 
-    console.log('gymbro', gym)
+    // console.log('gymbro', gym)
 
     return (
         <Carousel className={gym ? style.carouselContGym : style.carouselImg} variant='dark'>
-
                 {
                     projectImg.map(e => {
                         return (
@@ -19,7 +18,6 @@ const CarouselImg = ({projectImg, gym}) => {
                         )
                     })
                 }
-
         </Carousel>
     )
 }

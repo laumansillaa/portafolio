@@ -23,3 +23,27 @@
 .imgGym{
     height: 350px;
 }
+
+@media (max-width: 480px){
+    .carousel{
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img{
+        height: 200px;
+    }
+
+    .carouselImg{
+        height: 200px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 360px) {
+    .carouselImg{
+        width: 290px;
+    }
+}

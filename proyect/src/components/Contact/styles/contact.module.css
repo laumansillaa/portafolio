@@ -76,6 +76,12 @@
     box-shadow: 1px 1px 2px 1px black;
 }
 
+.emailError{
+    margin-top: .5rem;
+    color: red;
+    font-size: 1.2rem;
+}
+
  /* ***** TEXT AREA ****  */
 .contTextarea{
     height: 60%;

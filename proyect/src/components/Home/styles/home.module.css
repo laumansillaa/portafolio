@@ -29,14 +29,18 @@ h4, h1{
 }
 
 .contIcons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     width: 15%;
-    border-radius: 25%;
+    height: 10vh;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
     margin-bottom: 3rem;
 }
 
 .icon{
     height: 2.5rem;
-    margin-right: 1rem;
 }
 
 .icon:hover{
@@ -112,7 +116,11 @@ h4, h1{
         width: 100%;
     }
 
-    .contText, .contIcons{
+    .contIcons{
+        width: 45%;
+    }
+
+    .contText{
         width: 100%;
     }
 
@@ -132,5 +140,11 @@ h4, h1{
     
     .homeSubtitle{
         font-size: 2.6rem;
+    }
+}
+
+@media (max-width: 360px){
+    .svgHome{
+        height: 10rem;
     }
 }
