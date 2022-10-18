@@ -19,9 +19,6 @@ const Contact = () => {
     })
     const [error, setError] = useState(null)
 
-    console.log('seterror', error, form.email)
-
-
     const handleChange = (e) => {
         setForm({
             ...form,
@@ -63,9 +60,15 @@ const Contact = () => {
                 </div>
                 <div className={style.containIcon}>
                     <div className={style.cont}>
-                        <a href="https://www.linkedin.com/in/lautaro-mansilla" className={style.icon} ><img src={linkedinB} alt='img linkedin' title='Linkedin' className={style.iconSvg}/></a>
-                        <a href="mailto:mansillaalau@gmail.com" className={style.icon}><img src={gmailB} alt='img gmail' title='Gmail' className={style.iconSvg}/></a>
-                        <a href="https://www.github.com/laumansillaa" className={style.icon}><img src={githubB} alt='img github' title='Github' className={style.iconSvg}/></a>
+                        <a href="https://www.linkedin.com/in/lautaro-mansilla" 
+                            className={style.icon} 
+                            target="_blank" ><img src={linkedinB} alt='img linkedin' title='Linkedin' className={style.iconSvg}/></a>
+                        <a href="mailto:mansillaalau@gmail.com" 
+                            className={style.icon} 
+                            target="_blank"><img src={gmailB} alt='img gmail' title='Gmail' className={style.iconSvg}/></a>
+                        <a href="https://www.github.com/laumansillaa" 
+                            className={style.icon} 
+                            target="_blank"><img src={githubB} alt='img github' title='Github' className={style.iconSvg}/></a>
                     </div>
                 </div>
             </div>

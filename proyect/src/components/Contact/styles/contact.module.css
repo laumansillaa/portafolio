@@ -282,3 +282,9 @@
         width: 50%;
     }
 }
+
+@media screen and (min-width: 480px) and (max-width: 950px){
+    .btn{
+        width: 45%;
+    }
+}

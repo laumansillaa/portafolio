@@ -106,6 +106,7 @@ h4, h1{
 
 
 @media (max-width: 480px){
+
     .containerHome{
         flex-direction: column;
         height: 100%;
@@ -146,5 +147,26 @@ h4, h1{
 @media (max-width: 360px){
     .svgHome{
         height: 10rem;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 950px){
+
+    .containerHome{
+        background-position:center;
+    }
+
+    .contText, .contSvg{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contSvg{
+        width: 90%;
+    }
+
+    .svgHome{
+        height: 20rem;
     }
 }
