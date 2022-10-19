@@ -230,12 +230,19 @@
 .notification{
     font-size: 1rem;
     margin-top: .5rem;
-    background: green;
+    background: #4F9226;
     width: 45%;
     border-radius: 8px;
-    /* text-align: start; */
-    /* opacity: .5; */
-    border: 1px solid green;
+    border: 2px solid #2C5115;
+}
+
+.errorNotification {
+    font-size: .8rem;
+    margin-top: .5rem;
+    background: red;
+    width: 60%;
+    border-radius: 8px;
+    /* border: 1px solid #2C5115; */
 }
 
 @media (max-width: 480px){
@@ -293,6 +300,10 @@
 
     .notification{
         width: 65%;
+    }
+
+    .errorNotification{
+        width: 85%;
     }
 }
 

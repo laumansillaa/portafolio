@@ -14,10 +14,7 @@ import homeCountries from '../../assets/Projects/countries/homeCountries.jpg'
 import createCountries from '../../assets/Projects/countries/createCountries.jpg'
 import style from "./styles/project.module.css";
 import githubB from '../../assets/svg/githubB.svg'
-import './styles/projects-screen-750.css';
-import './styles/projects-screen-375.css';
-import './styles/projects-screen-390.css';
-import './styles/projects-screen-414.css';
+
 
 const Project = () => {
 

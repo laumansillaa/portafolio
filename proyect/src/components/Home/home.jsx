@@ -4,10 +4,7 @@ import whatsapp from '../../assets/svg/whatsapp.svg'
 import linkedin from '../../assets/svg/linkedin.svg'
 import github from '../../assets/svg/github.svg'
 import style from "./styles/home.module.css";
-import './styles/home-screen-750.css';
-import './styles/home-screen-414.css';
-import './styles/home-screen-820.css';
-import './styles/home-screen-412.css';
+
 
 
 const Home = () => {

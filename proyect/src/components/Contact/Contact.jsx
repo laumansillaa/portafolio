@@ -6,8 +6,7 @@ import linkedinB from '../../assets/svg/linkedinB.svg'
 import githubB from '../../assets/svg/githubB.svg'
 import validateEmail from '../../utils/utils'
 import style from "./styles/contact.module.css";
-import './styles/contact-screen-750.css';
-import './styles/contact-screen-690.css';
+
 
 
 const Contact = () => {
@@ -19,7 +18,8 @@ const Contact = () => {
     })
     const [error, setError] = useState(null)
     const [open, setOpen] = useState(null)
-    // const [error, setError] = useState(null)
+
+    const [errorMessage, setErrorMessage] = useState(true)
 
     const handleChange = (e) => {
         setForm({
@@ -33,9 +33,9 @@ const Contact = () => {
         validateEmail(form.email) ? setError(false) : setError(true)
     }, [form.email])
 
-    useEffect(() => {
-        closeNotification()
-    }, [open])
+    // useEffect(() => {
+    //     closeNotification()
+    // }, [open])
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -45,7 +45,7 @@ const Contact = () => {
                 setOpen(true)
                 console.log('Succes', response.status, response.text)
             }, function(error) {
-                setError(true)
+                setErrorMessage(true)
                 setOpen(true)
                 console.log('Failed', error)
             })
@@ -54,25 +54,25 @@ const Contact = () => {
             alert('Complete todos los campos')
         }
     }
-    console.log(open, 'hola')
+    // console.log(open, 'hola')
 
     const notification = () => {
         if (open) {
             return (
-                <div className={style.notification}>
-                    <h4>{error ? 'Tuvimos un problema al enviar tu mensaje..' : 
+                <div className={errorMessage ? style.errorNotification : style.notification}>
+                    <h4>{errorMessage ? 'Hubo un error al enviar tu mensaje' : 
                     'Mensaje enviado con exito!'}</h4>
                 </div>
             )
         }
     }
 
-    const closeNotification = () => {
-        if (open) {
-            setTimeout(setOpen, 3000, null)
-            const reload = window.location.reload()
-        }
-    }
+    // const closeNotification = () => {
+    //     if (open) {
+    //         setTimeout(setOpen, 4000, null)
+    //         const reload = window.location.reload()
+    //     }
+    // }
 
     return (
         
