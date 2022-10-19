@@ -227,6 +227,17 @@
     padding-left: .5rem;
 }
 
+.notification{
+    font-size: 1rem;
+    margin-top: .5rem;
+    background: green;
+    width: 45%;
+    border-radius: 8px;
+    /* text-align: start; */
+    /* opacity: .5; */
+    border: 1px solid green;
+}
+
 @media (max-width: 480px){
 
     .containerContact{

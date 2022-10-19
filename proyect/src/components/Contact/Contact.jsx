@@ -18,6 +18,8 @@ const Contact = () => {
         message: ''
     })
     const [error, setError] = useState(null)
+    const [open, setOpen] = useState(null)
+    // const [error, setError] = useState(null)
 
     const handleChange = (e) => {
         setForm({
@@ -31,21 +33,46 @@ const Contact = () => {
         validateEmail(form.email) ? setError(false) : setError(true)
     }, [form.email])
 
+    useEffect(() => {
+        closeNotification()
+    }, [open])
+
     const sendEmail = (e) => {
         e.preventDefault();
         if (form.name && form.email && form.message) {
-            emailjs.sendForm('service_cgoczyk', 'template_no9mltg', form, 'wL7kzoiVP0Ea4R_TF')
+            emailjs.send('service_cgoczyk', 'template_no9mltg', form, 'wL7kzoiVP0Ea4R_TF')
             .then(function(response) {
+                setOpen(true)
                 console.log('Succes', response.status, response.text)
             }, function(error) {
+                setError(true)
+                setOpen(true)
                 console.log('Failed', error)
             })
-            e.target.reset();
+            // e.target.reset();
         } else {
             alert('Complete todos los campos')
         }
     }
+    console.log(open, 'hola')
 
+    const notification = () => {
+        if (open) {
+            return (
+                <div className={style.notification}>
+                    <h4>{error ? 'Tuvimos un problema al enviar tu mensaje..' : 
+                    'Mensaje enviado con exito!'}</h4>
+                </div>
+            )
+        }
+    }
+
+    const closeNotification = () => {
+        if (open) {
+            setTimeout(setOpen, 3000, null)
+            const reload = window.location.reload()
+        }
+    }
 
     return (
         
@@ -73,7 +100,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className={style.formContact}>
-                <form ref={form} onSubmit={sendEmail} className={style.form}>
+                <form onSubmit={sendEmail} className={style.form}>
                     <div className={style.contInput}>
                         <input type='text' 
                             name='name' 
@@ -102,6 +129,11 @@ const Contact = () => {
                             className={style.textArea} 
                             ></textarea>
                     </div>
+                        {   
+                            <>
+                                {notification()}
+                            </>
+                        }
                     <div className={style.contBtnSubmit}>
                         <button type='submit' className={style.btn} disabled={!form.name & !form.email & !form.message}>
                             Enviar
