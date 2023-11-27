@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactPlayer from 'react-player';
 import CarouselImg from './carousel';
-// import Allalumns from "../../assets/Projects/IonicNote/Allalumns.jpg";
 import home from '../../assets/Projects/adm/home.jpg'
 import home1 from '../../assets/Projects/adm/home1.jpg'
 import about from '../../assets/Projects/adm/about.jpg'
@@ -43,7 +41,7 @@ const Project = () => {
                         </div>
                     </div>
                     <div className={style.reactPlayer}>
-                        <ReactPlayer url='https://vimeo.com/677424926' className={style.player}/>
+                        {/* <ReactPlayer url='https://vimeo.com/677424926' className={style.player}/> */}
                     </div>
                 </div>  
             </div>

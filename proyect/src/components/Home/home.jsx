@@ -1,43 +1,32 @@
-import React from 'react';
-import developer from '../../assets/svg/developer.svg'
-import whatsapp from '../../assets/svg/whatsapp.svg'
-import linkedin from '../../assets/svg/linkedin.svg'
-import github from '../../assets/svg/github.svg'
+import React from "react";
+import developer from "../../assets/svg/developer.svg";
 import style from "./styles/home.module.css";
-
-
+import imgPerritos from '../../assets/Header/perrito.webp'
 
 const Home = () => {
-    return (
-        <div className={style.containerHome} id='home'>
-            <div className={style.contText}>
-                    <div className={style.homeInfo}>
-                        <h3 className={style.welcomeHome}>Hola, bienvenido!</h3>
-                        <div className={style.titleHome}>
-                            <h1 className={style.homeName}>Lautaro Mansilla</h1> 
-                        </div>
-                        <div className={style.subtitleHome}>
-                            <h1 className={style.homeSubtitle}>Fullstack Web Developer</h1>
-                        </div>
-                    </div>
-                    <div className={style.contSvg}>
-                        <img src={developer} alt='developer.svg' className={style.svgHome}/>
-                    </div>
-                
-            </div>
-            <div className={style.contIcons}>
-                <img src={whatsapp} alt='whatsapp' className={style.icon}/>
-                <a href="https://www.linkedin.com/in/lautaro-mansilla" target="_blank">
-                    <img src={linkedin} alt='linkedin' className={style.icon}/>
-                </a>
-                <a href="https://www.github.com/laumansillaa" target="_blank">
-                    <img src={github} alt='github' className={style.icon}/>
-                </a>
-            </div>
+  return (
+    <div className={style.containerHome} id="home">
+      <div className={style.contText}>
+        <div className={style.homeInfo}>
+          <div className={style.titleHome}>
+            <label className={style.contName}><div className={style.point}></div><label className={style.homeName}>Lautaro</label></label>
+            <label className={style.homeLastname}>Mansilla</label>
+          </div>
+          <div className={style.subtitleHome}>
+            <label className={style.homeSubtitle}>Fullstack Web Developer</label>
+            <div className={style.line}></div>
+            <label>Ver proyectos</label>
+          </div>
         </div>
-    )
-}
-
-
+        <div className={style.contSvg}>
+          <img src={developer} alt="developer.svg" className={style.svgHome} />
+        </div>
+      </div>
+      <div className={style.contImg}>
+        <img src={imgPerritos} alt="asdf" className={style.imgProfile} />
+      </div>
+    </div>
+  );
+};
 
 export default Home;
