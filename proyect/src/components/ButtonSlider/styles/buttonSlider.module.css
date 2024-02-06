@@ -1,0 +1,38 @@
+.buttonSlider {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid gray;
+    padding: 0px 6px;
+    border-radius: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out; 
+}
+
+.textButton {
+    display: none;
+}
+
+.buttonSlider:hover{
+    width: 120px;
+    justify-content: space-between;
+    padding: 0px 10px;
+
+}
+
+.buttonSlider:hover .textButton {
+    display: flex;
+    overflow: hidden;
+}
+
+.arrow {
+    transform: rotate(0deg);
+    transition: transform 1s ease;
+    height: 25px;
+}
+
+.buttonSlider:hover .arrow {
+    transform: rotate(360deg);
+}

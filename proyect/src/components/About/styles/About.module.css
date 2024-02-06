@@ -1,178 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka+One&family=Poppins:wght@500&family=Roboto&family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka+One&family=Poppins:wght@500&family=Roboto&family=Staatliches&display=swap");
 
-.aboutContainer{
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    padding: 6%;
-    gap: 64px;
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  background: #f2f2f2;
+  padding: 6%;
+  gap: 64px;
 }
 
 .contBodySection {
-    display: flex;
+  display: flex;
+  border-bottom: 1px solid #000;
 }
 
-.contAboutDescription{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 64px;
-    padding: 1rem;
-    width: 50%;
+.contAboutDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  padding: 1rem;
+  width: 50%;
 }
 
 .aboutDescription {
-    font-size: 1.2rem;
-    color: #0E0E0E;
-    font-family: Poppins;
-    text-align: start;
+  font-size: 1.2rem;
+  color: #0e0e0e;
+  font-family: Poppins;
+  text-align: start;
 }
 
 .stackDescription {
-    text-align: center;
-    color: #000000;
-    font-size: 1.6rem;
-    font-family: Poppins;
+  text-align: center;
+  color: #000000;
+  font-size: 1.6rem;
+  font-family: Poppins;
 }
 
-.contNameStack{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
+.contNameStack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
 }
 
-.boxStack{
-    background: #F9FBF2;
-    color: #333;
-    border-radius: 100%;
-    box-shadow: 1px 1px 2px 1px grey;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.boxStack:hover{
-    box-shadow: 2px 2px 5px 2px grey;
+.boxStack {
+  background: #fff;
+  color: #333;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .stack {
-    font-family: Poppins;
-    font-size: 1rem;
-    letter-spacing: 2px;
+  font-family: Poppins;
+  font-size: 1rem;
+  letter-spacing: 2px;
 }
 
-.contStack{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-    color: #fff;
-    width: 50%;
+.contStack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  color: #fff;
+  width: 50%;
 }
 
-
-.contInfo{
-    height: 80%;
-}
-
-
-.aboutButton{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1em;
+.contInfo {
+  height: 80%;
 }
 
 .buttonDownload {
-    text-decoration: none;
-    background-color: transparent;
-    color: #333;
-    font-family: Bebas Neue;
-    letter-spacing: 1px;
-    border: 1px solid #000000;
-    border-radius: 50px;
-    padding: 6px 18px;
-    font-size: 18px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+  text-decoration: none;
+  background-color: transparent;
+  color: #333;
+  font-family: Bebas Neue;
+  letter-spacing: 1px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  padding: 6px 18px;
+  font-size: 18px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
-@media (max-width: 480px){
-    .aboutContainer{
-        flex-direction: column;
-        height: 100%;
-    }
+@media only screen and (max-width: 480px) {
+  .aboutContainer {
+    flex-direction: column;
+    height: 100%;
+    margin-top: 120px;
+  }
 
-    .contAboutDescription{
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem 0 3rem 0;
-    }
+  .contBodySection {
+    flex-direction: column;
+  }
 
-    .boxStack{
-        width: 29%;
-    }
+  .contAboutDescription {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 3rem 0;
+    gap: 32px;
+  }
 
-    .contStack{
-        width: 100%;
-        padding: 0;
-    }
+  .aboutDescription {
+    font-size: 1rem;
+    line-height: 22px;
+  }
 
-    .contInfo{
-        padding: 0 1rem 1rem 1rem;
-    }
+  .contStack {
+    width: 100%;
+    gap: 32px;
+    padding: 0;
+  }
 
-    .ethSvg{
-        height: 18rem;
-    }
+  .contNameStack {
+    height: 100%;
+  }
 
-    .aboutBtn{
-        margin-top: 1.5rem;
-    }
+  .contInfo {
+    padding: 0 1rem 1rem 1rem;
+  }
 
-    h3{
-        margin: 0;
-    }
 }
 
-@media (max-width: 360px){
-    .ethSvg{
-        height: 15rem;
-    }
+@media screen and (min-width: 480px) and (max-width: 950px) {
+  .aboutContainer {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .boxStack{
-        width: 28%;
-    }
+  .contAboutDescription,
+  .contStack {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .stack{
-        margin-top: .2rem;
-        font-size: 0.8rem;
-    }
-}
-
-@media screen and (min-width: 480px) and (max-width: 950px){
-    .aboutContainer{
-        height: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contAboutDescription, .contStack{
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contAboutDescription{
-        margin-bottom: 2rem;
-    }
+  .contAboutDescription {
+    margin-bottom: 2rem;
+  }
 }

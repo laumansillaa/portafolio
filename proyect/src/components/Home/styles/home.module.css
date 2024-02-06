@@ -10,7 +10,8 @@
 }
 
 .contText {
-  width: 80%;
+  padding: 0px 6%;
+  gap: 32px;
   min-height: 80vh;
   display: flex;
   align-items: center;
@@ -47,12 +48,14 @@
 
 .homeName,
 .homeLastname {
-  font-family: Staatliches;
+  font-family: 'Poppins';
   color: #000;
   font-size: 5.4rem;
   letter-spacing: 5px;
   line-height: 0.9em;
   height: fit-content;
+  text-transform: uppercase;
+  font-weight: 700;
   margin: 0px;
 }
 
@@ -63,7 +66,8 @@
 
 .homeSubtitle {
   font-size: 1.4rem;
-  font-family: Staatliches;
+  font-family: 'Poppins';
+  font-weight: 600;
   letter-spacing: 2px;
   line-height: 1em;
   color: #000;
@@ -77,13 +81,32 @@
 
 .line {
   display: flex;
-  width: 250px;
+  max-width: 250px;
+  width: 220px;
   height: 1px;
   background-color: #333;
 }
 
-.contSvg {
-  width: 30%;
+.contYear {
+  display: flex;
+  text-align: end;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+.since {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.year {
+  color: #fff;
+  font-size: 14rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .homeImage {
@@ -103,8 +126,8 @@
 
 .imgProfile{
   object-fit: cover;
+  object-position: center top;
   width: 100%;
-  /* height: 100%; */
 }
 
 @media only screen and (max-width: 480px) {
@@ -114,42 +137,63 @@
     width: 100%;
   }
 
-  .contInfo,
-  .contSvg {
-    width: 100%;
-  }
-
-  .contIcons {
-    width: 45%;
-  }
-
   .contText {
+    flex-direction: column;
     width: 100%;
   }
 
-  .contText,
-  .contSvg {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .homeInfo {
+    width: 100%;
   }
 
-  h1 {
-    text-align: center;
+  .contName, .titleHome {
+    align-items: flex-end;
+    width: 100%;
   }
 
-  .homeName {
-    font-size: 4rem;
+  .homeName, .homeLastname {
+    font-size: 2.8rem;
+    padding: 0;
+    text-align: end;
+  }
+
+  .point {
+    width: 25px;
+    height: 25px;
   }
 
   .homeSubtitle {
-    font-size: 2.6rem;
+    font-size: 32px;
   }
-}
 
-@media (max-width: 360px) {
-  .svgHome {
-    height: 10rem;
+  .subtitleHome {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .homeSubtitle {
+    text-align: start;
+    font-size: 1.4rem;
+  }
+
+  .line {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .year {
+    font-size: 8rem;
+  }
+
+  .since {
+    font-size: 1.5rem;
+    bottom: 5px;
+    right: 20px;
+  }
+
+  .contImg {
+    height: 250px;
   }
 }
 
